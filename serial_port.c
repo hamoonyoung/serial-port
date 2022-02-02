@@ -1,6 +1,6 @@
 
 /* 
-* @license Moon Young Ha <https://github.com/hamoonyoung/serial-port>
+* @license Moon Young Ha <https://github.com/hamoonyoung/serial_port>
 *
 * References:
 * https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/
