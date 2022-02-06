@@ -154,7 +154,7 @@ int main(int argc, char ** argv)
 				break;
 
 			default:
-				fprintf (stderr, "Usage: %p [-] serialPortPath [-l]\n", argv[0]);
+				fprintf (stderr, "Usage: %s [-] serialPortPath [-p]\n", argv[0]);
 				break;
 		}
 	} 
