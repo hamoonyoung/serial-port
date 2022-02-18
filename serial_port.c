@@ -188,8 +188,19 @@ int main(int argc, char ** argv)
 		}
 
 		int s;
+		printf ("%d. Others (/dev/).\n", i);
 		printf("\nPlease select a serial port: ");
 		scanf("%d", &s);
+		fflush(stdin);
+		if (s == i){
+			char portaddress[255];
+			printf("\nPort Address: ");
+			scanf("%[^\n]%*c", devices[s]);
+			fflush(stdin);
+			strcpy(fullPath, "/dev/");
+			strcat(fullPath, devices[s]);
+			strcpy(devices[s], fullPath);
+		}
 
 		int serialPort = open_port(devices[s]);
 
